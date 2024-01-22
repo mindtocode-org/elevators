@@ -30,6 +30,7 @@ body {
 }
 #info {
   background-color: var(--dark);
+  height: 50px;
 }
 #info .info-text {
   border-radius: 100px 0px 0px 100px;
@@ -123,8 +124,8 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
+  z-index: 2;
 }
 .layout .over {
   margin: 0px 0px 0px 0px;
@@ -252,4 +253,7 @@ footer .footer {
   color: var(--light);
   padding: 10px;
   text-align: center;
+}
+iframe{
+  width: 100%;
 }

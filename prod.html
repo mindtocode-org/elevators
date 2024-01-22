@@ -93,12 +93,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link active" aria-current="page" href="#home"
                 >الرئيسه</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">عننا</a>
+              <a class="nav-link" href="#about">عننا</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">لماذا نحن</a>
@@ -123,7 +123,7 @@
         </div>
       </div>
     </nav>
-    <header class="position-relative">
+    <header class="position-relative" id="home">
       <!-- Swiper -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper position-relative">
@@ -131,37 +131,30 @@
             <img
               src="https://png.pngtree.com/background/20220720/original/pngtree-elevator-space-of-high-rise-buildings-picture-image_1685920.jpg"
               alt=""
-            />
-            <div class="layout">
-              <div class="row">
-                <div
-                  class="d-flex justify-content-center"
-                  style="margin: 100px auto"
-                >
-                  <div class="over">
-                    <p>شركة x | خدمات صيانة مصاعد في الرياض</p>
-                    <button class="btn btn-primary">طلب سعر</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+              loading="lazy"
+              />
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            
           </div>
           <div class="swiper-slide position-relative">
             <img
-              src="https://png.pngtree.com/background/20220720/original/pngtree-elevator-space-of-high-rise-buildings-picture-image_1685920.jpg"
+              src="https://www.dreamnighttours.ae/uploads/images/tours/slider/584197_dubai-img-worlds-novocinema.jpg"
               alt=""
-            />
-            <div class="layout">
-              <div class="row">
-                <div
-                  class="d-flex justify-content-center"
-                  style="margin: 100px auto"
-                >
-                  <div class="over">
-                    <p>شركة x | خدمات صيانة مصاعد في الرياض</p>
-                    <button class="btn btn-primary">طلب </button>
-                  </div>
-                </div>
+              loading="lazy"
+              />
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            
+          </div>
+        </div>
+        <div class="layout">
+          <div class="row">
+            <div
+              class="d-flex justify-content-center"
+              style="margin: 100px auto"
+            >
+              <div class="over">
+                <p>شركة x | خدمات صيانة مصاعد في الرياض</p>
+                <button class="btn btn-primary">طلب </button>
               </div>
             </div>
           </div>
@@ -170,16 +163,18 @@
     </header>
     <section id="about">
       <div class="row">
-        <div class="col-lg-6 m-auto">
-          <div class="text">
+        <div class="col-lg-6 m-auto d-flex">
+          <div class="text m-auto">
             <h3>نبذة عن المؤسسة</h3>
             <h4>أفضل شركة صيانة مصاعد في الرياض</h4>
-            <p>نص نص نص نص نص نص نص نص نص نصنص نص نص نص نص نص</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <button class="btn btn-primary">راسلنا</button>
           </div>
         </div>
-        <div class="col-lg-6 m-auto">
-          <div class="gallery">
+        <div class="col-lg-6 m-auto d-flex">
+          <div class="gallery m-auto">
             <img src="https://www.lifts.com.sa/wp-content/uploads/2021/01/lift-1-300x200.jpg" alt="a hot air balloon">
             <img src="https://www.lifts.com.sa/wp-content/uploads/2021/01/1-240x300.jpg" alt="a sky photo of an old city">
             <img src="https://www.lifts.com.sa/wp-content/uploads/2021/02/%D9%85%D8%B5%D8%B9%D8%AF-%D8%A8%D8%AF%D9%88%D9%86-%D8%AD%D9%81%D8%B1-%D8%A3%D9%88-%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3.webp" alt="a small boat">
@@ -187,6 +182,9 @@
           </div>
         </div>
       </div>
+    </section>
+    <section>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14944273.282288918!2d55.72849192663893!3d23.871732705297443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e7b33fe7952a41%3A0x5960504bc21ab69b!2z2KfZhNiz2LnZiNiv2YrYqQ!5e0!3m2!1sar!2seg!4v1705932717412!5m2!1sar!2seg"  height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <footer>
       <div class="row">
@@ -256,8 +254,10 @@
     var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
       centeredSlides: true,
+      effect: "fade",
+
       autoplay: {
-        delay: 2500,
+        delay: 3000,
         disableOnInteraction: false,
       },
       pagination: {
@@ -268,6 +268,7 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+     
     });
 
     </script>
