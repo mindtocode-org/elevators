@@ -315,3 +315,25 @@ iframe{
   margin: 20px auto;
   display: block;
 }
+.order-text{
+  font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px auto;
+    border: 1px solid;
+    padding: 20px;
+    border-color: var(--primary);
+  
+}
+#order button{
+width: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 40px auto;
+transition: all 1s ease-in-out;
+}
+#order button:hover{
+  background:var(--primary);
+color: #fff !important;
+}

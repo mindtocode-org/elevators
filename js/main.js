@@ -1,6 +1,6 @@
 // nav bar
 $("body").css("paddingTop", $(".navber").innerHeight() + 100);
-$(".navbar li a").click(function (e) {
+$(".navbar .nav-jquery a").click(function (e) {
   e.preventDefault();
   $("html , body").animate(
     {
@@ -9,7 +9,7 @@ $(".navbar li a").click(function (e) {
     1000
   );
 });
-$(".navbar li a").click(function () {
+$(".navbar .nav-jquery a").click(function () {
   $(".navbar a").removeClass("active");
   $(this).addClass("active");
 });
@@ -19,7 +19,7 @@ $(window).scroll(function () {
     if ($(window).scrollTop() > $(this).offset().top) {
       const id = $(this).attr("id");
       $(".navbar a").removeClass("active");
-      $(`.navbar li a[data-scroll=${id}]`).addClass("active");
+      $(`.navbar .nav-jquery a[data-scroll=${id}]`).addClass("active");
     }
   });
 });
@@ -37,4 +37,14 @@ $(document).ready(function () {
   $("#scrollTopBtn").click(function () {
     $("html, body").animate({ scrollTop: 0 }, "slow");
   });
+});
+$(document).ready(function() {
+  $("#why .position-relative").hover(
+    function() {
+      $(this).find(".layout").stop().fadeTo(500, 1);
+    },
+    function() {
+      $(this).find(".layout").stop().fadeTo(500, 0);
+    }
+  );
 });
