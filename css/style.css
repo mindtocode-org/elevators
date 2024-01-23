@@ -15,6 +15,7 @@ body {
   --primary: #059986;
   --primaryHover: #205b3b;
   --light: #f3f6f8;
+  --color: #fff;
   --dark: #1e3240;
   --gold: #cca449;
 }
@@ -76,7 +77,7 @@ body {
   justify-content: end;
 }
 .navbar-brand img {
-  width: 100px;
+  width: 50px;
 }
 .nav-item {
   font-size: 20px;
@@ -96,7 +97,7 @@ nav {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: var(--color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,7 +154,7 @@ nav {
   background-color: #1b1717ad;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: var(--color);
   font-weight: bold;
   font-size: 32px;
 }
@@ -239,8 +240,11 @@ nav {
 footer {
   background-color: var(--dark);
   color: var(--light);
-  padding: 10px;
   text-align: center;
+}
+footer img {
+  width: 200px;
+  margin: 100px auto;
 }
 footer ul {
   list-style: none;
@@ -283,7 +287,7 @@ iframe {
   left: 20px;
   padding: 10px;
   background-color: var(--primary);
-  color: #fff;
+  color: var(--color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -301,7 +305,7 @@ iframe {
   font-size: 40px;
   margin: 20px auto;
   border-radius: 12px;
-  color: #fff;
+  color: var(--color);
 }
 #why .layout {
   background-color: var(--gold);
@@ -313,7 +317,7 @@ iframe {
 #why .layout p {
   font-size: 18px;
   text-align: center;
-  color: #fff;
+  color: var(--color);
   margin: 20px auto;
   display: block;
 }
@@ -336,7 +340,7 @@ iframe {
 }
 #order button:hover {
   background: var(--primary);
-  color: #fff !important;
+  color: var(--color) !important;
 }
 .whats-app {
   position: fixed;
@@ -345,7 +349,7 @@ iframe {
   bottom: 40px;
   right: 15px;
   background-color: #25d366;
-  color: #FFF;
+  color: var(--color);
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
@@ -357,4 +361,10 @@ iframe {
 }
 .my-float {
   margin-top: 16px;
+}
+#services{
+  background: var(--primary);
+  padding: 20px;
+  color: var(--color);
+  font-size: 18px;
 }
