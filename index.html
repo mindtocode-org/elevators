@@ -388,5 +388,27 @@
     </script>
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function() {
+        var lastScrollTop = 0;
+        var navbar = $("nav");
+        var delta = 0; // You can adjust this value
+        $(window).scroll(function() {
+          var scrollTop = $(this).scrollTop();
+  
+          // Add or remove the fixed-top class based on scroll direction
+          if (scrollTop < lastScrollTop && Math.abs(lastScrollTop - scrollTop) > delta) {
+            // Scrolling down
+            navbar.removeClass("fixed-top");
+          }
+          else {
+            // Scrolling up
+            navbar.addClass("fixed-top");
+          }
+  
+          lastScrollTop = scrollTop;
+        });
+      });
+    </script>
   </body>
 </html>
