@@ -1,5 +1,5 @@
 // nav bar
-$("body").css("paddingTop", $(".navber").innerHeight() + 100);
+$("body").css("paddingTop", $(".navber").innerHeight() + 1);
 $(".navbar .nav-jquery a").click(function (e) {
   e.preventDefault();
   $("html , body").animate(
