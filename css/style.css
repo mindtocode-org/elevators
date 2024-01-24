@@ -402,3 +402,6 @@ iframe {
 .iframe {
   margin: -10px;
 }
+textarea{
+  resize: none;
+}
