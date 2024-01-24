@@ -9,6 +9,7 @@ body {
   direction: rtl;
   font-family: "Tajawal", sans-serif;
   background-color: var(--light);
+  font-size: 18px;
   /* padding-top: 120px; */
 }
 :root {
@@ -43,6 +44,11 @@ nav{
   border: 1px solid var(--primaryHover);
   background-color: var(--light);
 }
+#about button a {
+  color: var(--primaryHover) !important;
+  
+  text-decoration: none;
+}
 #info {
   background-color: var(--dark);
   height: 50px;
@@ -53,12 +59,13 @@ nav{
   width: 100%;
   padding: 10px;
 }
-.text {
-  text-align: center;
-}
+
 .text p {
-  margin: 10px -100px;
-  width: 600px;
+  color: var(--dark);
+  font-family: "mays", Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
 }
 .text button {
   margin: 20px;
@@ -88,6 +95,8 @@ nav{
 }
 .nav-link {
   color: var(--light) !important;
+  font-size: 18px;
+  font-weight: bold;
 }
 nav {
   background-color: var(--primary);
@@ -164,6 +173,18 @@ nav {
 #about {
   background-color: var(--light);
   padding: 20px;
+}
+#about h3{
+  color: var(--primary);
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+#about h4 {
+  color: var(--primary);
+  font-size: 60px;
+  font-weight: 600;
+
 }
 .gallery {
   --g: 8px; /* the gap */
@@ -245,9 +266,9 @@ footer {
   color: var(--light);
   text-align: center;
 }
-footer img {
-  width: 200px;
-  margin: 100px auto;
+footer .img-foot {
+  /* width: 200px; */
+  margin: 40px auto;
 }
 footer ul {
   list-style: none;
@@ -333,7 +354,7 @@ iframe {
   padding: 20px;
   border-color: var(--primary);
 }
-#order button {
+#order button , #add button {
   width: 300px;
   display: flex;
   justify-content: center;
@@ -341,7 +362,7 @@ iframe {
   margin: 40px auto;
   transition: all 1s ease-in-out;
 }
-#order button:hover {
+#order button:hover,#add button:hover {
   background: var(--primary);
   color: var(--color) !important;
 }
@@ -373,4 +394,11 @@ iframe {
 }
 #about, #why, #services{
   padding-top: 70px;
+}
+.fixed-top{
+  width: 95%;
+    margin: auto;
+}
+.iframe {
+  margin: -10px;
 }
