@@ -268,7 +268,12 @@ footer {
 }
 footer .img-foot {
   /* width: 200px; */
-  margin: 40px auto;
+  margin: 90px auto;
+
+}
+footer img{
+  width: 125px;
+  margin: 10px auto;
 }
 footer ul {
   list-style: none;
@@ -396,7 +401,7 @@ iframe {
   padding-top: 70px;
 }
 .fixed-top{
-  width: 95%;
+  max-width: 1320px;
     margin: auto;
 }
 .iframe {
