@@ -264,7 +264,6 @@ nav {
 footer {
   background-color: var(--dark);
   color: var(--light);
-  text-align: center;
 }
 footer .img-foot {
   /* width: 200px; */
@@ -274,6 +273,7 @@ footer .img-foot {
 footer img{
   width: 125px;
   margin: 10px auto;
+  display: block;
 }
 footer ul {
   list-style: none;
@@ -301,7 +301,7 @@ footer .foot-link li i {
   font-size: 20px;
 }
 footer .footer {
-  background-color: var(--dark);
+  background-color: #212529;
   color: var(--light);
   padding: 10px;
   text-align: center;
@@ -409,4 +409,10 @@ iframe {
 }
 textarea{
   resize: none;
+}
+.footer a{
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
 }
