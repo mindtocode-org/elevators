@@ -6,7 +6,7 @@ $(".navbar .nav-jquery a").click(function (e) {
     {
       scrollTop: $("#" + $(this).data("scroll")).offset().top
     },
-    1000
+    
   );
 });
 $(".navbar .nav-jquery a").click(function () {
@@ -41,10 +41,10 @@ $(document).ready(function () {
 $(document).ready(function() {
   $("#why .position-relative").hover(
     function() {
-      $(this).find(".layout").stop().fadeTo(500, 1);
+      $(this).find(".layout").stop().fadeTo(0, 1);
     },
     function() {
-      $(this).find(".layout").stop().fadeTo(500, 0);
+      $(this).find(".layout").stop().fadeTo(0, 0);
     }
   );
 });
