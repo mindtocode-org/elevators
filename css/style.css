@@ -13,12 +13,13 @@ body {
   /* padding-top: 120px; */
 }
 :root {
-  --primary: #059986;
+  --primary: #222222;
   --primaryHover: #205b3b;
   --light: #f3f6f8;
   --color: #fff;
-  --dark: #1e3240;
+  --dark:hsl(42 25% 65% / 1) ;
   --gold: #cca449;
+  --gray:"gray"
 }
 .btn-primary,
 .btn-check:checked + .btn,
@@ -26,11 +27,19 @@ body {
 .btn.show,
 .btn:first-child:active,
 :not(.btn-check) + .btn:active {
-  color: var(--primary) !important;
+  color: var(--gray) !important;
   border: 1px solid var(--primary);
-  background-color: var(--light);
+  background-color: var(--gold);
   transition: all 1s ease;
   width: 150px;
+  border: none;
+  color: var(--color) !important;
+}
+
+.navbar-brand{
+  background: #ffff;
+  border-radius: 5px;
+  padding: 4px 8px;
 }
 nav{
   transition: top 0.3s;
@@ -40,9 +49,12 @@ nav{
 }
 .btn-primary:hover,
 .btn-primary:active {
-  color: var(--primaryHover) !important;
   border: 1px solid var(--primaryHover);
-  background-color: var(--light);
+  
+  background-color: hsl(42 25% 65% / 1);
+  border: none;
+  color: #222 !important;
+
 }
 #about button a {
   color: var(--primaryHover) !important;
@@ -55,13 +67,13 @@ nav{
 }
 #info .info-text {
   border-radius: 100px 0px 0px 100px;
-  color: var(--light);
+  color: #222;
   width: 100%;
   padding: 10px;
 }
 
 .text p {
-  color: var(--dark);
+  color: var(--gray);
   font-family: "mays", Sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -79,7 +91,7 @@ nav{
 }
 #info .info-link {
   /* background-color: var(--primary); */
-  color: var(--light);
+  color: #222;
   width: 100%;
   padding: 10px;
 }
@@ -163,7 +175,7 @@ nav {
 .layout .over {
   margin: 0px 0px 0px 0px;
   padding: 100px 50px 100px 50px;
-  background-color: #1b1717ad;
+  background-color: #1b1717c7;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   color: var(--color);
@@ -475,4 +487,21 @@ form p {
 #type svg{
   fill:var(--primary);
   width: 50px;
+}
+.btn-navbar{
+  color: var(--gold) !important;
+  border: 1px solid var(--gold) !important;
+  background-color: var(--primary);
+  transition: all 1s ease;
+  width: 150px;
+  border: none;
+}
+.btn-navbar:hover{
+  color: #cca449 ;
+  border: 1px solid var(--gold);
+  background-color: var(--gold);
+  opacity: 0.7;
+  transition: all 1s ease;
+  width: 150px;
+  border: none;
 }
