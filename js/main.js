@@ -48,3 +48,15 @@ $(document).ready(function() {
     }
   );
 });
+
+function submitForm() {
+  const formData = {
+    code: document.getElementById("code").value,
+    codeClient: document.getElementById("codeClient").value,
+    code: document.getElementById("code").value,
+    code: document.getElementById("code").value,
+    code: document.getElementById("code").value,
+    code: document.getElementById("code").value,
+  };
+  console.log("Form Data:", formData);
+}

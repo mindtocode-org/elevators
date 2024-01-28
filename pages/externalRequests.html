@@ -103,10 +103,11 @@
               >
             </li>
           </ul>
-          <a href="https://web.whatsapp.com/send?phone=966555183137&text=Hi" target="_blank">
-            <button class="btn btn-primary">
-              راسلنا
-          </button>
+          <a
+            href="https://web.whatsapp.com/send?phone=966555183137&text=Hi"
+            target="_blank"
+          >
+            <button class="btn btn-primary">راسلنا</button>
           </a>
         </div>
       </div>
@@ -114,15 +115,27 @@
     <section class="container card p-5" id="add">
       <p class="order-text">اطلب الان</p>
       <form action="" class="row mt-2">
+        <p>بيانات مقدم الطلب</p>
+        <div class="col-lg-12 mb-3">
+          <label for="code" class="form-label"
+            >الكود الخاص بك</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="code"
+            placeholder="الكود الخاص بك"
+          />
+        </div>
         <p>بيانات العميل</p>
         <div class="col-lg-4 mb-3">
-          <label for="exampleFormControlInput1" class="form-label"
+          <label for="codeClient" class="form-label"
             >رمز العميل</label
           >
           <input
             type="text"
             class="form-control"
-            id="exampleFormControlInput1"
+            id="codeClient"
             placeholder="رمز العميل"
           />
         </div>
@@ -176,10 +189,8 @@
             >نوع المنتج</label
           >
           <select class="form-select" aria-label="Default select example">
-            
             <option value="1">عقد مصعد جديد</option>
             <option value="2">عقد صيانه جديد</option>
-            
           </select>
         </div>
         <div class="col-lg-3 mb-3">
@@ -289,7 +300,6 @@
           <select class="form-select" aria-label="Default select example">
             <option value="0">لايوجد</option>
             <option value="1">يوجد</option>
-            
           </select>
         </div>
         <div class="col-lg-4 mb-3">
@@ -377,61 +387,61 @@
           ></textarea>
         </div>
         <div class="col-lg-12 mb-3">
-          <button class="btn btn-primary">ارسال</button>
+          <button class="btn btn-primary" onclick="submitForm()">ارسال</button>
         </div>
       </form>
     </section>
     <footer>
       <div class="container">
-        
-          <div class="row">
-            <div class="col-lg-5">
-              <div class="img-foot">
-                <img src="../images/logo.me.png" alt="" />
-                <p class="mt-5">مؤسسة انشائية لصيانة المصاعد: خدمات صيانة مصاعد عالية الجودة لتجربة مريحة وموثوقة وسريعة, نحن بخدمتك أينما كنت</p>
-  
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <ul class="foot-link-info">
-                <li>
-                  <i class="fa-solid fa-clock"></i>
-                  طوال الايام الاسبوع
-                </li>
-                <li>
-                  <i class="fa-solid fa-envelope"></i>
-                  info@gmail.com
-                </li>
-                <li>
-                  <i class="fa-solid fa-phone"></i>
-                  966555183137
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-4 foot">
-              <ul class="foot-link-staic">
-                <li>
-                  <i class="fa-solid fa-location-dot"></i>
-                  الرياض - محافظة الخرج - حي السلام - طريق ابو بكر الصديق
-                </li>
-              </ul>
-              <ul class="foot-link">
-                <li>
-                  <i class="fa-brands fa-facebook"></i>
-                </li>
-                <li>
-                  <i class="fa-brands fa-twitter"></i>
-                </li>
-                <li>
-                  <i class="fa-brands fa-instagram"></i>
-                </li>
-                <li>
-                  <i class="fa-brands fa-linkedin"></i>
-                </li>
-              </ul>
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="img-foot">
+              <img src="../images/logo.me.png" alt="" />
+              <p class="mt-5">
+                مؤسسة انشائية لصيانة المصاعد: خدمات صيانة مصاعد عالية الجودة
+                لتجربة مريحة وموثوقة وسريعة, نحن بخدمتك أينما كنت
+              </p>
             </div>
           </div>
-        
+          <div class="col-lg-3">
+            <ul class="foot-link-info">
+              <li>
+                <i class="fa-solid fa-clock"></i>
+                طوال الايام الاسبوع
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                info@gmail.com
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                966555183137
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 foot">
+            <ul class="foot-link-staic">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                الرياض - محافظة الخرج - حي السلام - طريق ابو بكر الصديق
+              </li>
+            </ul>
+            <ul class="foot-link">
+              <li>
+                <i class="fa-brands fa-facebook"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-twitter"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-instagram"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-linkedin"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="footer">
         <div class="row">
@@ -449,12 +459,16 @@
         </div>
       </div>
     </footer>
-    
+
     <button id="scrollTopBtn"><i class="fas fa-arrow-up"></i></button>
     <div class="fixedButton" href="#">
       <div class="roundedFixedBtn">
-        <a  class="whats-app" target="_blank" href="https://web.whatsapp.com/send?phone=966555183137&text=Hi">
-        <i class="fa-brands fa-whatsapp"></i>
+        <a
+          class="whats-app"
+          target="_blank"
+          href="https://web.whatsapp.com/send?phone=966555183137&text=Hi"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
         </a>
       </div>
     </div>
@@ -463,7 +477,8 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/main.js"></script>
+    
   </body>
 </html>
