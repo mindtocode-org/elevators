@@ -459,3 +459,20 @@ form p {
   width: 4em;
   height: 4em;
 }
+#type{
+  padding: 20px;
+}
+#type .itemType h2{
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--primary);
+}
+#type .itemType h3{
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--primary);
+}
+#type svg{
+  fill:var(--primary);
+  width: 50px;
+}
