@@ -401,10 +401,16 @@ iframe {
   margin-top: 16px;
 }
 #services{
-  background: var(--primary);
+  background: #000;
   padding: 20px;
   color: var(--color);
   font-size: 18px;
+}
+#services .box-title{
+font-size: 24px;
+}
+#services .box-description {
+  color: #000;
 }
 #about, #why, #services{
   padding-top: 70px;
@@ -434,4 +440,22 @@ form p {
 }
 .why h2{
   font-size: 20px !important;
+}
+.boxing{
+  background-color: var(--primary);
+  margin: 0em 1em 0em 1em;
+  padding: 2em 2em 2em 2em;
+  border-radius: 100px 100px 0px 0px;
+  box-shadow: 0px -10px 0px 0px var(--primaryHover) inset;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  height: 300px;
+}
+.boxing:hover{
+  
+  border-radius: 0px 0px 100px 100px;
+  box-shadow: 0px -10px 0px 0px var(--primaryHover);
+}
+#services svg{
+  width: 4em;
+  height: 4em;
 }
