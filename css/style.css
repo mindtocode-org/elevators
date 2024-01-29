@@ -19,7 +19,7 @@ body {
   --color: #fff;
   --dark:hsl(42 25% 65% / 1) ;
   --gold: #cca449;
-  --gray:"gray"
+  --gray:#808080;
 }
 .btn-primary,
 .btn-check:checked + .btn,
@@ -187,13 +187,13 @@ nav {
   padding: 20px;
 }
 #about h3{
-  color: var(--primary);
+  color: var(--gray);
   font-size: 25px;
   font-weight: 600;
   letter-spacing: 0px;
 }
 #about h4 {
-  color: var(--primary);
+  color: var(--gold);
   font-size: 60px;
   font-weight: 600;
 
@@ -275,7 +275,7 @@ nav {
 
 footer {
   background-color: var(--dark);
-  color: var(--light);
+  color: #222;
 }
 footer .img-foot {
   width: 340px;
@@ -424,7 +424,7 @@ font-size: 24px;
 #services .box-description {
   color: #000;
 }
-#about, #why, #services{
+#about, #why, #services , #workTeam{
   padding-top: 70px !important;
 }
 .fixed-top{
@@ -438,7 +438,7 @@ textarea{
   resize: none;
 }
 .footer a{
-  color: var(--primary);
+  color: var(--gold);
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
@@ -477,12 +477,12 @@ form p {
 #type .itemType h2{
   font-size: 25px;
   font-weight: 600;
-  color: var(--primary);
+  color: var(--gray);
 }
 #type .itemType h3{
   font-size: 60px;
   font-weight: 600;
-  color: var(--primary);
+  color: var(--gold);
 }
 #type svg{
   fill:var(--primary);
@@ -507,4 +507,15 @@ form p {
 }
 .elementor-icon-box-description{
   font-size: 16px;
+}
+#workTeam{
+  background-color: #f1f1f1;
+  text-align: start;
+}
+#workTeam h2{
+    font-size: 48px;
+    color: var(--gold);
+}
+.info p:last-child{
+  color: var(--gold);
 }
