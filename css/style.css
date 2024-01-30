@@ -17,9 +17,9 @@ body {
   --primaryHover: #205b3b;
   --light: #f3f6f8;
   --color: #fff;
-  --dark:hsl(42 25% 65% / 1) ;
+  --dark: hsl(42 25% 65% / 1);
   --gold: #cca449;
-  --gray:#808080;
+  --gray: #808080;
 }
 .btn-primary,
 .btn-check:checked + .btn,
@@ -36,12 +36,12 @@ body {
   color: var(--color) !important;
 }
 
-.navbar-brand{
+.navbar-brand {
   background: #ffff;
   border-radius: 5px;
   padding: 4px 8px;
 }
-nav{
+nav {
   transition: top 0.3s;
 }
 .navbar-nav .nav-link.active {
@@ -50,15 +50,14 @@ nav{
 .btn-primary:hover,
 .btn-primary:active {
   border: 1px solid var(--primaryHover);
-  
+
   background-color: hsl(42 25% 65% / 1);
   border: none;
   color: #222 !important;
-
 }
 #about button a {
   color: var(--primaryHover) !important;
-  
+
   text-decoration: none;
 }
 #info {
@@ -186,7 +185,7 @@ nav {
   background-color: var(--light);
   padding: 20px;
 }
-#about h3{
+#about h3 {
   color: var(--gray);
   font-size: 25px;
   font-weight: 600;
@@ -196,7 +195,6 @@ nav {
   color: var(--gold);
   font-size: 60px;
   font-weight: 600;
-
 }
 .gallery {
   --g: 8px; /* the gap */
@@ -279,13 +277,12 @@ footer {
 }
 footer .img-foot {
   width: 340px;
-   margin: 100px auto;
-
+  margin: 100px auto;
 }
 footer .img-foot p {
   width: 380px;
 }
-footer img{
+footer img {
   width: 125px;
   margin: 10px auto;
   display: block;
@@ -354,12 +351,12 @@ iframe {
   height: 100px;
   border-radius: 50px;
 }
-#why{
-  background-color: hsla(0,0%,100%,1);
+#why {
+  background-color: hsla(0, 0%, 100%, 1);
 }
 #why .layout {
   background-color: var(--gold);
-  
+
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -380,7 +377,8 @@ iframe {
   padding: 20px;
   border-color: var(--primary);
 }
-#order button , #add button {
+#order button,
+#add button {
   width: 300px;
   display: flex;
   justify-content: center;
@@ -388,7 +386,8 @@ iframe {
   margin: 40px auto;
   transition: all 1s ease-in-out;
 }
-#order button:hover,#add button:hover {
+#order button:hover,
+#add button:hover {
   background: var(--primary);
   color: var(--color) !important;
 }
@@ -412,32 +411,36 @@ iframe {
 .my-float {
   margin-top: 16px;
 }
-#services{
+#services {
   background: #000;
   padding: 20px;
   color: var(--color);
   font-size: 18px;
 }
-#services .box-title{
-font-size: 24px;
+#services .box-title {
+  font-size: 24px;
 }
 #services .box-description {
   color: #000;
 }
-#about, #why, #services , #workTeam{
-  padding-top: 70px !important;
+#about,
+#why,
+#services,
+#workTeam,
+#price {
+  padding: 70px !important;
 }
-.fixed-top{
+.fixed-top {
   max-width: 1320px;
-    margin: auto;
+  margin: auto;
 }
 .iframe {
   margin: -10px;
 }
-textarea{
+textarea {
   resize: none;
 }
-.footer a{
+.footer a {
   color: var(--gold);
   text-decoration: none;
   font-weight: bold;
@@ -450,10 +453,10 @@ form p {
   font-size: 18px;
   font-weight: bold;
 }
-.why h2{
+.why h2 {
   font-size: 20px !important;
 }
-.boxing{
+.boxing {
   background-color: var(--primary);
   margin: 0em 1em 0em 1em;
   padding: 2em 2em 2em 2em;
@@ -462,33 +465,32 @@ form p {
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   height: 300px;
 }
-.boxing:hover{
-  
+.boxing:hover {
   border-radius: 0px 0px 100px 100px;
   box-shadow: 0px -10px 0px 0px var(--gold);
 }
-#services svg{
+#services svg {
   width: 4em;
   height: 4em;
 }
-#type{
+#type {
   padding: 20px;
 }
-#type .itemType h2{
+#type .itemType h2 {
   font-size: 25px;
   font-weight: 600;
   color: var(--gray);
 }
-#type .itemType h3{
+#type .itemType h3 {
   font-size: 60px;
   font-weight: 600;
   color: var(--gold);
 }
-#type svg{
-  fill:var(--primary);
+#type svg {
+  fill: var(--primary);
   width: 50px;
 }
-.btn-navbar{
+.btn-navbar {
   color: var(--gold) !important;
   border: 1px solid var(--gold) !important;
   background-color: var(--primary);
@@ -496,8 +498,8 @@ form p {
   width: 150px;
   border: none;
 }
-.btn-navbar:hover{
-  color: #cca449 ;
+.btn-navbar:hover {
+  color: #cca449;
   border: 1px solid var(--gold);
   background-color: var(--gold);
   opacity: 0.7;
@@ -505,17 +507,35 @@ form p {
   width: 150px;
   border: none;
 }
-.elementor-icon-box-description{
+.elementor-icon-box-description {
   font-size: 16px;
 }
-#workTeam{
+#workTeam {
   background-color: #f1f1f1;
   text-align: start;
 }
-#workTeam h2{
-    font-size: 48px;
-    color: var(--gold);
-}
-.info p:last-child{
+#workTeam h2 {
+  font-size: 48px;
   color: var(--gold);
+}
+.info p:last-child {
+  color: var(--gold);
+}
+#price {
+  background-color: #222;
+  padding: 60px;
+  color: var(--light);
+}
+#price p {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 40px;
+}
+#price h2 {
+  font-size: 25px;
+  color: var(--gold);
+}
+#price h6{
+  font-size: 30px;
+  font-weight: 500;
 }
