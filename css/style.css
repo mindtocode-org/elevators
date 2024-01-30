@@ -272,7 +272,7 @@ nav {
 }
 
 footer {
-  background-color: #DAD6B5;
+  background-color: #dad6b5;
   color: #222;
 }
 footer .img-foot {
@@ -349,7 +349,7 @@ iframe {
   color: var(--color);
   width: 80px;
   height: 80px;
-  border-radius: 50px
+  border-radius: 50px;
 }
 /* #why {
   background-color: hsla(0, 0%, 100%, 1);
@@ -428,8 +428,9 @@ iframe {
 #why,
 #services,
 #workTeam,
-#price {
-  padding: 70px !important;
+#price,
+#priceId {
+  padding: 100px !important;
 }
 .fixed-top {
   max-width: 1320px;
@@ -540,11 +541,78 @@ form p {
   font-size: 48px;
   color: var(--gold);
 }
-#price h6{
+#price h6 {
   font-size: 18px;
   font-weight: 500;
 }
-label{
+label {
   font-weight: bold;
   font-size: 16px;
+}
+.elementor-price-table {
+  text-align: center;
+}
+.items {
+  padding: 0px;
+  border-style: none;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  height: 460px;
+  overflow: hidden;
+}
+.elementor-price-table__header {
+  padding: 40px 24px 40px 24px;
+  background-color: var(--gold);
+  border-radius: 10px 10px 0px 0px;
+}
+.elementor-price-table__heading {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1em;
+  letter-spacing: 0.5px;
+}
+ul {
+  list-style: none;
+}
+.elementor-price-table__features-list li:before {
+  border-top-style: solid !important;
+  border-top-color: var(--primary) !important;
+  border-top-width: 1px !important;
+  margin-top: 13px !important;
+  margin-bottom: 13px !important;
+}
+.elementor-price-table
+  .elementor-price-table__features-list
+  li:not(:first-child):before {
+  content: "";
+  display: block;
+  border: 0 solid hsla(0, 0%, 47.8%, 0.3);
+  margin: 10px 12.5%;
+}
+.elementor-price-table__feature-inner {
+  margin: 19px auto;
+}
+.elementor-price-table__ribbon {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  right: auto;
+  transform: rotate(0);
+  width: 150px;
+  overflow: hidden;
+  height: 150px;
+}
+.elementor-price-table__ribbon-inner {
+  background-color: var(--primary);
+  margin-top: 32px;
+  transform: translateY(-50%) translateX(32px) rotate(-45deg);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 200px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.03);
 }
