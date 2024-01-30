@@ -428,7 +428,7 @@ iframe {
 #services,
 #workTeam,
 #price {
-  padding: 130px !important;
+  padding: 70px !important;
 }
 .fixed-top {
   max-width: 1320px;
