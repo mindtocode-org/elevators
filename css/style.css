@@ -342,27 +342,28 @@ iframe {
 .box {
   background: var(--primary);
   /* background: hsla(180,51.4%,51.6%,1); */
-  padding: 20px;
-  font-size: 40px;
+  padding: 12px;
+  font-size: 32px;
   margin: 20px auto;
   border-radius: 12px;
   color: var(--color);
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px
 }
-#why {
+/* #why {
   background-color: hsla(0, 0%, 100%, 1);
-}
+} */
 #why .layout {
   background-color: var(--gold);
   padding: 10px;
+  height: auto;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
 
 #why .layout p {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   color: var(--color);
   margin: 20px auto;
@@ -428,7 +429,7 @@ iframe {
 #services,
 #workTeam,
 #price {
-  padding: 130px !important;
+  padding: 70px !important;
 }
 .fixed-top {
   max-width: 1320px;
