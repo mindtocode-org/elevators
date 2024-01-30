@@ -117,7 +117,7 @@
               <a class="nav-link" href="#" data-scroll="price">عرض سعر</a>
             </li>
             <li class="nav-item nav-jquery">
-              <a class="nav-link" href="#" data-scroll="">تواصل معانا</a>
+              <a class="nav-link" href="#" data-scroll="contact">تواصل معانا</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/externalRequests.html"
@@ -707,7 +707,7 @@
         </div>
       </div>
     </section>
-    <section id="price" class="pt-5 block text-center">
+    <section id="price" class="p-5 block text-center">
       <div class="col-lg-12">
         <h6 class="elementor-heading-title elementor-size-default">
           عقد صيانة
@@ -727,7 +727,11 @@
         </button>
       </div>
     </section>
-    <section id="priceId" class="p-5 container">
+    <section
+      id="priceId"
+      class="p-5 container"
+      style="padding-top: 100px !important"
+    >
       <div class="container p-5">
         <div class="elementor-widget-container">
           <h2
@@ -861,8 +865,7 @@
                   <li class="elementor-repeater-item-ccffc2c">
                     <div class="elementor-price-table__feature-inner">
                       <i class="" aria-hidden="true"></i>
-                      <span>الصيانة الوقائية (أربع زيارات خلال العام)
-                      </span>
+                      <span>الصيانة الوقائية (أربع زيارات خلال العام) </span>
                     </div>
                   </li>
                   <li class="elementor-repeater-item-a4b60a9">
@@ -896,6 +899,51 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="container p-5 block">
+      <div class="row p-5">
+        <div class="col-lg-6">
+          <div class="">
+            <h3>تواصل معنا</h3>
+            <h4>تجربتك استثنائية مع صعد لصيانة المصاعد</h4>
+            <p class="">
+              يسعدنا تواصلك معنا عبر البريد الإلكتروني او وسائل التواصل المعروضة بالأسفل
+            </p>
+            <form class="row g-3">
+              <div class="col-lg-6 mb-3">
+                <input type="text" class="form-control" id="name" placeholder="الاسم">
+              </div>
+              <div class="col-lg-6 mb-3">
+                <input type="email" class="form-control" id="email" placeholder="البريد الالكتروني">
+
+              </div>
+              <div class="col-lg-6 mb-3">
+                <input type="text" class="form-control" id="phone" placeholder="رقم الهاتف">
+              </div>
+              <div class="col-lg-6 mb-3">
+                <select class="form-select" id="select">
+                  <option value="عقود الصيانة">عقود الصيانة</option>
+                  <option value="فحص مصاعد">فحص مصاعد</option>
+                  <option value="مكالمات طوارئ">مكالمات طوارئ</option>
+                  <option value="استفسارات عامة">استفسارات عامة</option>
+                </select>
+              </div>
+              <div class="col-lg-12 mb-3">
+                <textarea class="form-control" id="Textarea" rows="3" placeholder="استفسارك"></textarea>
+              </div>
+              <div class="col-lg-12 mb-3">
+              <button class="btn btn-primary">ارسل</button>
+
+              </div>
+            </form>
+            
+            
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="images/saad-elevator-5.jpg" alt="" class="img-fluid" style="border-radius: 10px;">
         </div>
       </div>
     </section>
