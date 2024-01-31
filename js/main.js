@@ -60,3 +60,52 @@ function submitForm() {
   };
   console.log("Form Data:", formData);
 }
+function addComplaints() {
+
+  // Get form data
+  const fullName = document.getElementById("fullName").value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
+  const content = document.getElementById("content").value;
+
+  // Check for empty fields
+  if (!fullName || !email || !phone || !content) {
+    console.error("Please fill in all fields");
+    return;
+  }
+
+  const formData = {
+    fullName,
+    email,
+    phone,
+    content,
+  };
+
+  console.log("Form Data:", formData);
+
+  const apiUrl = "http://elvatorapp-001-site1.btempurl.com/api/Complaints/create";
+
+  fetch(apiUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "accept": "text/plain",
+    },
+    body: JSON.stringify(formData),
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log("Data sent successfully:", data);
+      // You can add further actions on success
+    })
+    .catch((error) => {
+      console.error("Error sending data:", error.message);
+      // Handle errors here (e.g., display an error message to the user)
+    });
+}
+

@@ -635,3 +635,7 @@ ul {
 .form-control , .form-select{
 padding: 14px 30px 20px;
 }
+
+.defaultPadding{
+ padding: 14px 30px 20px ;
+}

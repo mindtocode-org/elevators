@@ -170,7 +170,7 @@
             >
               <div class="over">
                 <p style="font-size: 32px; text-align: center; color: #cca449">
-                  شركة مؤسسة انشائية
+                  مؤسسة مرحلة انشائية للمصاعد
                 </p>
                 <p style="font-size: 48px; text-align: center">
                   خدمات صيانة مصاعد في الرياض
@@ -907,20 +907,35 @@
         <div class="col-lg-6">
           <div class="">
             <h3>تواصل معنا</h3>
-            <h4>تجربتك استثنائية مع صعد لصيانة المصاعد</h4>
+            <h4>تجربتك استثنائية مع مؤسسة مرحلة انشائية لصيانة المصاعد</h4>
             <p class="">
-              يسعدنا تواصلك معنا عبر البريد الإلكتروني او وسائل التواصل المعروضة بالأسفل
+              يسعدنا تواصلك معنا عبر البريد الإلكتروني او وسائل التواصل المعروضة
+              بالأسفل
             </p>
-            <form class="row g-3">
+            <div class="row g-3">
               <div class="col-lg-6 mb-3">
-                <input type="text" class="form-control" id="name" placeholder="الاسم">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="الاسم"
+                />
               </div>
               <div class="col-lg-6 mb-3">
-                <input type="email" class="form-control" id="email" placeholder="البريد الالكتروني">
-
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="البريد الالكتروني"
+                />
               </div>
               <div class="col-lg-6 mb-3">
-                <input type="text" class="form-control" id="phone" placeholder="رقم الهاتف">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="رقم الهاتف"
+                />
               </div>
               <div class="col-lg-6 mb-3">
                 <select class="form-select" id="select">
@@ -931,31 +946,35 @@
                 </select>
               </div>
               <div class="col-lg-12 mb-3">
-                <textarea class="form-control" id="Textarea" rows="3" placeholder="استفسارك"></textarea>
+                <textarea
+                  class="form-control"
+                  
+                  rows="3"
+                  placeholder="استفسارك"
+                  id="message"
+                ></textarea>
               </div>
               <div class="col-lg-12 mb-3">
-              <button class="btn btn-primary">ارسل</button>
-
+                <button class="btn btn-primary" onclick="sendEmail()">
+                  ارسل
+                </button>
               </div>
-            </form>
-            
-            
+            </div>
           </div>
         </div>
         <div class="col-lg-6">
-          <img src="images/saad-elevator-5.jpg" alt="" class="img-fluid" style="border-radius: 10px;">
+          <img
+            src="images/saad-elevator-5.jpg"
+            alt=""
+            class="img-fluid"
+            style="border-radius: 10px"
+          />
         </div>
       </div>
     </section>
     <section class="iframe">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1971.7248940862103!2d47.31970654866991!3d24.15573817793802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e254fb5b474fd69%3A0xb5d92278f171ffa0!2z2K3ZiiDYp9mE2LPZhNin2YU!5e0!3m2!1sen!2seg!4v1705934344027!5m2!1sen!2seg"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1971.7248940862103!2d47.31970654866991!3d24.15573817793802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e254fb5b474fd69%3A0xb5d92278f171ffa0!2z2K3ZiiDYp9mE2LPZhNin2YU!5e0!3m2!1sen!2seg!4v1705934344027!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <footer>
       <div class="container">
@@ -1067,6 +1086,7 @@
     </script>
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+
     <script>
       $(document).ready(function () {
         var lastScrollTop = 0;
@@ -1090,6 +1110,38 @@
           lastScrollTop = scrollTop;
         });
       });
+    </script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      emailjs.init("iPQjxR3EiJPghUA2U");
+      function sendEmail() {
+        
+        console.log("Email sent successfully");
+        
+        // Get form data
+        const formData = {
+          name: document.getElementById("name").value,
+          emailUser: document.getElementById("email").value,
+          message: document.getElementById("message").value,
+          select: document.getElementById("select").value,
+          phone: document.getElementById("phone").value,
+          
+        };
+        console.log("Email sent successfully:", formData);
+
+        // Send email using email.js
+
+        emailjs.send("service_7g5wlfx", "template_wc84bwt", formData).then(
+          function (response) {
+            console.log("Email sent successfully:", response);
+            // You can add further actions on success
+          },
+          function (error) {
+            console.error("Error sending email:", error);
+            // You can handle errors here
+          }
+        );
+      }
     </script>
   </body>
 </html>
