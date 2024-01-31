@@ -182,7 +182,6 @@ nav {
   font-size: 32px;
 }
 #about {
-  background-color: var(--light);
   padding: 20px;
 }
 #about h3 {
@@ -272,8 +271,8 @@ nav {
 }
 
 footer {
-  background-color: #dad6b5;
-  color: #222;
+  background-color: #222;
+  color: #fdfdfd;
 }
 footer .img-foot {
   width: 340px;
@@ -286,6 +285,9 @@ footer img {
   width: 125px;
   margin: 10px auto;
   display: block;
+  background: #ffff;
+  border-radius: 5px;
+  padding: 4px 8px
 }
 footer ul {
   list-style: none;
