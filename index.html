@@ -1134,39 +1134,60 @@
     </script>
 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-      emailjs.init("8vPA9ETRUJ4WvbL_3");
-      function sendEmail() {
-        console.log("Email sent successfully");
+    <!-- Include SweetAlert2 CSS and JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-        // Get form data
-        const formData = {
-          name: document.getElementById("name").value,
-          emailUser: document.getElementById("email").value,
-          message: document.getElementById("message").value,
-          select: document.getElementById("select").value,
-          phone: document.getElementById("phone").value,
-        };
-        console.log("Email sent successfully:", formData);
+<script>
+  emailjs.init("8vPA9ETRUJ4WvbL_3");
+  function sendEmail() {
+    console.log("Email sent successfully");
 
-        // Send email using email.js
+    // Get form data
+    const formData = {
+      name: document.getElementById("name").value,
+      emailUser: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+      select: document.getElementById("select").value,
+      phone: document.getElementById("phone").value,
+    };
+    console.log("Email sent successfully:", formData);
 
-        emailjs.send("service_rmizkpn", "template_b898xx4", formData).then(
-          function (response) {
-            console.log("Email sent successfully:", response);
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("message").value = "";
-            document.getElementById("select").value = "";
-            document.getElementById("phone").value = "";
-            // You can add further actions on success
-          },
-          function (error) {
-            console.error("Error sending email:", error);
-            // You can handle errors here
-          }
-        );
+    // Send email using email.js
+    emailjs.send("service_rmizkpn", "template_b898xx4", formData).then(
+      function (response) {
+        console.log("Email sent successfully:", response);
+
+        // Reset the form after successful submission
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        document.getElementById("phone").value = "";
+
+        // Show SweetAlert for successful submission
+        Swal.fire({
+          icon: 'success',
+          title: 'تم الارسال',
+          text: `شكرا لك علي تواصلك يا ${formData.name}`,
+        });
+
+        // You can add further actions on success
+      },
+      function (error) {
+        console.error("Error sending email:", error);
+
+        // Show SweetAlert for error
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: 'Failed to send email. Please try again.',
+        });
+
+        // You can handle errors here
       }
-    </script>
+    );
+  }
+</script>
+
   </body>
 </html>
