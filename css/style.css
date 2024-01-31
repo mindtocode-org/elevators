@@ -450,7 +450,7 @@ textarea {
   font-weight: bold;
   font-size: 18px;
 }
-form p {
+.form p {
   background: #f3f3f3;
   padding: 10px;
   color: var(--primary);
