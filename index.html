@@ -1135,7 +1135,7 @@
 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
-      emailjs.init("iPQjxR3EiJPghUA2U");
+      emailjs.init("8vPA9ETRUJ4WvbL_3");
       function sendEmail() {
         console.log("Email sent successfully");
 
@@ -1151,9 +1151,10 @@
 
         // Send email using email.js
 
-        emailjs.send("service_7g5wlfx", "template_wc84bwt", formData).then(
+        emailjs.send("service_rmizkpn", "template_b898xx4", formData).then(
           function (response) {
             console.log("Email sent successfully:", response);
+            formData = {}
             // You can add further actions on success
           },
           function (error) {
