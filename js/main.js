@@ -100,11 +100,25 @@ function addComplaints() {
       return response.json();
     })
     .then((data) => {
+      document.getElementById("fullName").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("content").value = "";
+      document.getElementById("phone").value = "";
       console.log("Data sent successfully:", data);
+      Swal.fire({
+        icon: 'success',
+        title: 'تم الارسال',
+        text: `شكرا لك علي رسالتك يا ${formData.fullName}`,
+      });
       // You can add further actions on success
     })
     .catch((error) => {
       console.error("Error sending data:", error.message);
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Failed to send email. Please try again.',
+      });
       // Handle errors here (e.g., display an error message to the user)
     });
 }
