@@ -192,7 +192,7 @@
         </div>
       </div>
     </header>
-    <section style="background-color: white; padding: 90px !important;">
+    <section style="background-color: white; padding: 90px !important">
       <section class="block p-5 container" id="about">
         <div class="row p-5">
           <div class="col-lg-6 m-auto d-flex">
@@ -1154,7 +1154,11 @@
         emailjs.send("service_rmizkpn", "template_b898xx4", formData).then(
           function (response) {
             console.log("Email sent successfully:", response);
-           
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+            document.getElementById("select").value = "";
+            document.getElementById("phone").value = "";
             // You can add further actions on success
           },
           function (error) {
