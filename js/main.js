@@ -16,7 +16,7 @@ $(".navbar .nav-jquery a").click(function () {
 
 $(window).scroll(function () {
   $(".block").each(function () {
-    if ($(window).scrollTop() > $(this).offset().top) {
+    if ($(window).scrollTop() > $(this).offset().top - 100) {
       const id = $(this).attr("id");
       $(".navbar a").removeClass("active");
       $(`.navbar .nav-jquery a[data-scroll=${id}]`).addClass("active");
