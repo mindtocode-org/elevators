@@ -33,9 +33,9 @@
   </head>
   <body>
     <section id="info">
-      <div class="container-fluid px-5">
+      <div class="container">
         <div class="row">
-          <div class="col-10 p-0">
+          <div class="col-lg-8 p-0">
             <div class="info-text">
               <ul class="d-flex">
                 <li>
@@ -44,20 +44,16 @@
                 </li>
                 <li>
                   <i class="fa-solid fa-envelope"></i>
-                  cr1011154627@gmail.com
+                  info@gmail.com
                 </li>
                 <li>
-                  <i class="fa-brands fa-whatsapp"></i>
-                  المبيعات : 00966555183137
-                </li>
-                <li>
-                  <i class="fa-brands fa-whatsapp"></i>
-                  الإدارة : 00966581211108
+                  <i class="fa-solid fa-phone"></i>
+                  966555183137
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-2 p-0">
+          <div class="col-lg-4 p-0">
             <div class="info-link">
               <ul class="d-flex">
                 <li>
@@ -121,7 +117,9 @@
       <form class="form row mt-2" onsubmit="submitOrder(event)">
         <p>بيانات مقدم الطلب</p>
         <div class="col-lg-6 mb-3">
-          <label for="code" class="form-label">الكود الخاص بك</label>
+          <label for="code" class="form-label"
+            >الكود الخاص بك</label
+          >
           <input
             type="text"
             class="form-control"
@@ -132,7 +130,9 @@
         </div>
         <p>بيانات العميل</p>
         <div class="col-lg-4 mb-3">
-          <label for="name" class="form-label">اسم العميل</label>
+          <label for="name" class="form-label"
+            >اسم العميل</label
+          >
           <input
             type="text"
             class="form-control"
@@ -142,7 +142,9 @@
           />
         </div>
         <div class="col-lg-4 mb-3">
-          <label for="phone" class="form-label">رقم الهاتف</label>
+          <label for="phone" class="form-label"
+            >رقم الهاتف</label
+          >
           <input
             type="text"
             class="form-control"
@@ -152,7 +154,9 @@
           />
         </div>
         <div class="col-lg-4 mb-3">
-          <label for="idNumber" class="form-label">هوية العميل</label>
+          <label for="idNumber" class="form-label"
+            >هوية العميل</label
+          >
           <input
             type="text"
             class="form-control"
@@ -161,7 +165,9 @@
           />
         </div>
         <div class="col-lg-6 mb-3">
-          <label for="city" class="form-label">المدينة</label>
+          <label for="city" class="form-label"
+            >المدينة</label
+          >
           <input
             type="text"
             class="form-control"
@@ -170,7 +176,9 @@
           />
         </div>
         <div class="col-lg-6 mb-3">
-          <label for="address" class="form-label">العنوان الوطني</label>
+          <label for="address" class="form-label"
+            >العنوان الوطني</label
+          >
           <input
             type="text"
             class="form-control"
@@ -189,7 +197,9 @@
           </select>
         </div>
         <div class="col-lg-3 mb-3">
-          <label for="price" class="form-label">السعر</label>
+          <label for="price" class="form-label"
+            >السعر</label
+          >
           <input
             type="number"
             class="form-control"
@@ -202,11 +212,7 @@
           <label for="exampleFormControlInput1" class="form-label"
             >نوع المنشاة</label
           >
-          <select
-            class="form-select"
-            id="facilityType"
-            aria-label="Default select example"
-          >
+          <select class="form-select" id="facilityType" aria-label="Default select example">
             <option value="1">فيلا سكنية داخلية</option>
             <option value="2">بانورامي</option>
             <option value="3">مبنى حكومي</option>
@@ -222,11 +228,7 @@
           <label for="exampleFormControlInput1" class="form-label"
             >نوع المصعد</label
           >
-          <select
-            class="form-select"
-            id="elevatorType"
-            aria-label="Default select example"
-          >
+          <select class="form-select" id="elevatorType" aria-label="Default select example">
             <option value="1">Gearless</option>
             <option value="2">GearBox</option>
             <option value="3">Mrl</option>
@@ -245,11 +247,7 @@
           <label for="exampleFormControlInput1" class="form-label"
             >نوع الماكينة</label
           >
-          <select
-            class="form-select"
-            id="machineType"
-            aria-label="Default select example"
-          >
+          <select class="form-select" id="machineType" aria-label="Default select example">
             <option value="1">Mody</option>
             <option value="2">Leo</option>
             <option value="3">GearBox</option>
@@ -269,11 +267,7 @@
           <label for="exampleFormControlInput1" class="form-label"
             >نوع الباب</label
           >
-          <select
-            class="form-select"
-            id="doorType"
-            aria-label="Default select example"
-          >
+          <select class="form-select" id="doorType" aria-label="Default select example">
             <option value="1">أبواب أوتوماتيكية</option>
             <option value="2">أبواب نصف أوتوماتيكية</option>
             <option value="3">أبواب تلسكوبية</option>
@@ -284,11 +278,7 @@
           <label for="exampleFormControlInput1" class="form-label"
             >اتجاة الباب
           </label>
-          <select
-            class="form-select"
-            id="doorOpening"
-            aria-label="Default select example"
-          >
+          <select class="form-select" id="doorOpening" aria-label="Default select example">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -299,11 +289,7 @@
           <label for="exampleFormControlInput1" class="form-label"
             >لون الكابينة</label
           >
-          <select
-            class="form-select"
-            id="cabinColour"
-            aria-label="Default select example"
-          >
+          <select class="form-select" id="cabinColour" aria-label="Default select example">
             <option value="1">اسود</option>
             <option value="2">ذهبي</option>
             <option value="3">فضي</option>
@@ -315,11 +301,7 @@
           <label for="exampleFormControlInput1" class="form-label"
             >السرعة</label
           >
-          <select
-            class="form-select"
-            id="elevatorSpeed"
-            aria-label="Default select example"
-          >
+          <select class="form-select" id="elevatorSpeed" aria-label="Default select example">
             <option value="1">VVVF</option>
             <option value="2">2speed</option>
             <option value="3">VFD</option>
@@ -330,17 +312,15 @@
           <label for="exampleFormControlInput1" class="form-label"
             >بطارية الطوراي</label
           >
-          <select
-            class="form-select"
-            id="emergencyBattery"
-            aria-label="Default select example"
-          >
+          <select class="form-select" id="emergencyBattery" aria-label="Default select example">
             <option value="0">لايوجد</option>
             <option value="1">يوجد</option>
           </select>
         </div>
         <div class="col-lg-4 mb-3">
-          <label for="numberOfElevators" class="form-label">عدد المصاعد</label>
+          <label for="numberOfElevators" class="form-label"
+            >عدد المصاعد</label
+          >
           <input
             type="text"
             class="form-control"
@@ -350,7 +330,9 @@
           />
         </div>
         <div class="col-lg-4 mb-3">
-          <label for="numberOfPassengers" class="form-label">عدد الركاب</label>
+          <label for="numberOfPassengers" class="form-label"
+            >عدد الركاب</label
+          >
           <input
             type="text"
             class="form-control"
@@ -360,7 +342,9 @@
           />
         </div>
         <div class="col-lg-4 mb-3">
-          <label for="numberOfStops" class="form-label">عدد الوقفات</label>
+          <label for="numberOfStops" class="form-label"
+            >عدد الوقفات</label
+          >
           <input
             type="text"
             class="form-control"
@@ -369,22 +353,33 @@
             required
           />
         </div>
-
+        
         <div class="col-lg-6 mb-3">
-          <label for="clientNotes" class="form-label">ملاحظات العميل</label>
+          <label for="clientNotes" class="form-label"
+            >ملاحظات العميل</label
+          >
           <textarea
-            id="clientNotes"
+          id="clientNotes"
             class="form-control"
             id="clientNotes"
             rows="3"
           ></textarea>
         </div>
         <div class="col-lg-6 mb-3">
-          <label for="facilityNotes" class="form-label">ملاحظات المنشاة</label>
-          <textarea class="form-control" rows="3" id="facilityNotes"></textarea>
+          <label for="facilityNotes" class="form-label"
+            >ملاحظات المنشاة</label
+          >
+          <textarea
+            class="form-control"
+            
+            rows="3"
+            id="facilityNotes"
+          ></textarea>
         </div>
         <div class="col-lg-6 mb-3">
-          <label for="clientRequests" class="form-label">طلبات العميل</label>
+          <label for="clientRequests" class="form-label"
+            >طلبات العميل</label
+          >
           <textarea
             class="form-control"
             id="clientRequests"
@@ -392,14 +387,16 @@
           ></textarea>
         </div>
         <div class="col-lg-6 mb-3">
-          <label for="technicalNotes" class="form-label">بيانات فنية</label>
+          <label for="technicalNotes" class="form-label"
+            >بيانات فنية</label
+          >
           <textarea
             class="form-control"
             id="technicalNotes"
             rows="3"
           ></textarea>
         </div>
-
+        
         <div class="col-lg-12 mb-3">
           <button class="btn btn-primary">ارسال</button>
         </div>
@@ -410,7 +407,7 @@
         <div class="row">
           <div class="col-lg-5">
             <div class="img-foot">
-              <img src="images/logo.me.png" alt="" />
+              <img src="../images/logo.me.png" alt="" />
               <p class="mt-5">
                 مؤسسة انشائية لصيانة المصاعد: خدمات صيانة مصاعد عالية الجودة
                 لتجربة مريحة وموثوقة وسريعة, نحن بخدمتك أينما كنت
@@ -423,17 +420,13 @@
                 <i class="fa-solid fa-clock"></i>
                 طوال الايام الاسبوع
               </li>
-              <li style="font-size: 18px">
+              <li>
                 <i class="fa-solid fa-envelope"></i>
-                cr1011154627@gmail.com
+                info@gmail.com
               </li>
-              <li style="font-size: 18px">
-                <i class="fa-brands fa-whatsapp"></i>
-                المبيعات : 00966555183137
-              </li>
-              <li style="font-size: 18px">
-                <i class="fa-brands fa-whatsapp"></i>
-                الإدارة : 00966581211108
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                966555183137
               </li>
             </ul>
           </div>
@@ -496,9 +489,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
 
     <script src="../js/jquery.js"></script>
     <script src="../js/main.js"></script>
+    
   </body>
 </html>
