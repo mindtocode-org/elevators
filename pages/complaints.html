@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=., initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <section id="info">
+      <div class="container-fluid px-5">
+        <div class="row">
+          <div class="col-10 p-0">
+            <div class="info-text">
+              <ul class="d-flex">
+                <li>
+                  <i class="fa-solid fa-clock"></i>
+                  طوال الايام الاسبوع
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  cr1011154627@gmail.com
+                </li>
+                <li>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  المبيعات : 00966555183137
+                </li>
+                <li>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  الإدارة : 00966581211108
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2 p-0">
+            <div class="info-link">
+              <ul class="d-flex">
+                <li>
+                  <i class="fa-brands fa-facebook"></i>
+                </li>
+                <li>
+                  <i class="fa-brands fa-twitter"></i>
+                </li>
+                <li>
+                  <i class="fa-brands fa-instagram"></i>
+                </li>
+                <li>
+                  <i class="fa-brands fa-linkedin"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../images/logo.me.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" data-scroll="">شكاوي</a>
+            </li>
+          </ul>
+          <a
+            href="https://web.whatsapp.com/send?phone=966555183137&text=Hi"
+            target="_blank"
+          >
+            <button class="btn btn-primary btn-navbar">راسلنا</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="container card p-5 mt-5" id="add">
+      <p class="order-text">شكاوي</p>
+      <div class="row mt-5">
+        <div class="col-lg-4 mb-3">
+          <label for="fullName" class="form-label">الاسم</label>
+          <input
+            type="text"
+            class="form-control"
+            id="fullName"
+            placeholder="الاسم"
+            required
+          />
+        </div>
+        <div class="col-lg-4 mb-3">
+          <label for="phone" class="form-label">رقم الهاتف</label>
+          <input
+            type="text"
+            class="form-control"
+            id="phone"
+            placeholder="رقم الهاتف"
+            required
+          />
+        </div>
+        <div class="col-lg-4 mb-3">
+          <label for="email" class="form-label">البريد الالكتروني</label>
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="البريد الالكتروني"
+          />
+        </div>
+
+        <div class="col-lg-12 mb-3">
+          <label for="content" class="form-label">تفاصيل الشكاوي</label>
+          <textarea class="form-control" id="content" rows="3"></textarea>
+        </div>
+        <div class="col-lg-12 mb-3">
+          <button class="btn btn-primary" onclick="addComplaints()">ارسال</button>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="img-foot">
+              <img src="images/logo.me.png" alt="" />
+              <p class="mt-5">
+                مؤسسة انشائية لصيانة المصاعد: خدمات صيانة مصاعد عالية الجودة
+                لتجربة مريحة وموثوقة وسريعة, نحن بخدمتك أينما كنت
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <ul class="foot-link-info">
+              <li>
+                <i class="fa-solid fa-clock"></i>
+                طوال الايام الاسبوع
+              </li>
+              <li style="font-size: 18px">
+                <i class="fa-solid fa-envelope"></i>
+                cr1011154627@gmail.com
+              </li>
+              <li style="font-size: 18px">
+                <i class="fa-brands fa-whatsapp"></i>
+                المبيعات : 00966555183137
+              </li>
+              <li style="font-size: 18px">
+                <i class="fa-brands fa-whatsapp"></i>
+                الإدارة : 00966581211108
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 foot">
+            <ul class="foot-link-staic">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                الرياض - محافظة الخرج - حي السلام - طريق ابو بكر الصديق
+              </li>
+            </ul>
+            <ul class="foot-link">
+              <li>
+                <i class="fa-brands fa-facebook"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-twitter"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-instagram"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-linkedin"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="row">
+          <div class="col-lg-6">
+            <p>جميع الحقوق محفوظة © لصالح مؤسسة مرحلة انشائية</p>
+          </div>
+          <div class="col-lg-6">
+            <p>
+              تم التصميم بواسطة
+              <a href="https://www.mindtocode.org" target="_blank"
+                >Mind To Code</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button id="scrollTopBtn"><i class="fas fa-arrow-up"></i></button>
+    <div class="fixedButton" href="#">
+      <div class="roundedFixedBtn">
+        <a
+          class="whats-app"
+          target="_blank"
+          href="https://web.whatsapp.com/send?phone=966555183137&text=Hi"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+      
+    </script>
+  </body>
+</html>
